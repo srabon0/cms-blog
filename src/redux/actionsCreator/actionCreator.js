@@ -1,8 +1,9 @@
-import { LOAD_PRODUCT } from "../actionTypes/actionTypes"
+import { LOAD_BLOG } from "../actionTypes/actionTypes"
 
 export const loadBlogs = (blogData)=>{
+    console.log(blogData)
     return {
-        type:LOAD_PRODUCT,
+        type:LOAD_BLOG,
         payload:blogData
     }
 

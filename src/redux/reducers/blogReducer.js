@@ -1,4 +1,4 @@
-import { LOAD_PRODUCT } from "../actionTypes/actionTypes"
+import { LOAD_BLOG } from "../actionTypes/actionTypes"
 
 const initilState = {
     test:"TEST",
@@ -6,7 +6,7 @@ const initilState = {
 }
 const blogReducer = (state=initilState,action)=>{
     switch(action.type){
-        case LOAD_PRODUCT :
+        case LOAD_BLOG :
             return {
                 ...state,
                 blogs:action.payload

@@ -1,310 +1,227 @@
 [
     {
-      "_id": "63b6754149004ef12061f289",
+      
       "index": 0,
       "isActive": false,
       "rating": 1.2,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--tbvEBMZt--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1q2bi939i0izxtbvqr52.png",
+      "title": "17 Compelling Reasons To Start Ditching TypeScript Now.",
+      "desc": "If you're anything like me, you're probably using Typescript because you were forced to. Your company decided that it would be the language of the future, so you were forced to learn it. At first, you were excited to use Typescript. You knew that it had a lot of potentials and would help you make more robust apps. But after using it for a while, You started to realize how annoying and frustrating it can be. In this article, I am going to vent my frustrations with Typescript. I had just started using it, like one month in, and was struggling to get the hang of it. After using it for a while, I've realized that it's so bad, and there are things I don't like about it at all.But before going over its drawback, let's start with a gentle high overview of the language.",
       "author": "Fernandez Gamble",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "10/10/2022",
+      "totalHits": 0,
       "email": "fernandezgamble@candecor.com",
       "tags": [
-        "excepteur",
-        "et",
-        "eiusmod",
-        "eu",
-        "excepteur",
-        "consectetur",
-        "Lorem"
+       "javascript"
       ]
     },
     {
-      "_id": "63b6754160c3ed369eef9bba",
+      
       "index": 1,
       "isActive": false,
       "rating": 2.5,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--hfQzBixF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fv0w1bgke78vu5yy9uc3.jpg",
+      "title": "Every Software Developer should write a blog ",
+      "desc": "As a software engineer it’s been a couple of years that I’m saying to myself that I’m going to start writing blog posts tomorrow, next week or even next month, but truth is I never did write a single blog post. The reason I didn’t start was, I thought, I’m not an expert of anything, not a famous person, and not good at writing, but a regular software engineer. Therefore, why should I take my time write a post and nobody even read it. That always stoped me starting a blog. But recently, after I read couple of blog posts from programmers and software engineers I changed my mind and decided blogging. Now, I have many reasons to write blog posts as a programmer, also, I think every software developer should have blog. Let’s see why I decided to write a blog: Learn faster and improve your technical skills I learn much faster when I try to explain or to teach somebody. I know this from Computer Science class group work projects from the college, because I still remember everything I tried to explain and show to other group members. Explaining pushes you to learn more about the topic which is good not only for your readers but for your own self as well. Starting a programming blog is very similar to teaching because in your blog you will be teaching the world about programming and computer science. Market yourself and kick start your career Your blog will open the doors for various networking and business opportunities that you might not find otherwise. Through the blog, you can get a lot of connections and leads for an upcoming freelance and contractor career. I’m going to tell you a real life example about one of my friends, he started learning Java programming language, and shared his progress on his blog, and he had recruiters sending him job offer that he never applied to, and they found his posts shared online. And, he started his software engineering career even before he finished his Java course.",
       "author": "Reba Kemp",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "10/02/2022",
+      "totalHits": 0,
       "email": "rebakemp@candecor.com",
       "tags": [
-        "ut",
-        "eiusmod",
-        "nisi",
-        "qui",
-        "proident",
-        "consectetur",
-        "sunt"
+      "webdev"
       ]
     },
     {
-      "_id": "63b675412e985acc4094a796",
+      
       "index": 2,
       "isActive": true,
       "rating": 1.6,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--hfQzBixF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fv0w1bgke78vu5yy9uc3.jpg",
+      "title": "Certified Kubernetes Application Developer (CKAD) Exam Tips",
+      "desc": "I recently passed CKAD exam, so thought of sharing my experience and tips, and the approach I took to comfortably pass the exam. There is only one shortcut to be successful in CKAD exam that's Practice, Practice and Practice! Though I really started focus study for CKAD exam a month back, and gave exam on Jan 2nd 2023 (what a better way to start an year, right?). I did start building my base more than a month ago. I was new to container and Kubernetes. Hence, I started learning about container, and basic knowledge of Kubernetes.",
       "author": "Marietta Keller",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "12/02/2022",
+      "totalHits": 0,
       "email": "mariettakeller@candecor.com",
       "tags": [
-        "laboris",
-        "sit",
-        "ea",
-        "dolor",
-        "quis",
-        "deserunt",
-        "labore"
+       "Kubernetes"
       ]
     },
     {
-      "_id": "63b675412556da5fd008ea26",
+      
       "index": 3,
       "isActive": true,
       "rating": 2.7,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--E5bC1zk3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uc36l62wjuecj66p0gru.png",
+      "title": "Blockchains, Artificial Intelligence (AI), and Decentralized Networks (+ smart contracts)",
+      "desc": "The concept of artificial intelligence (AI) has been the subject of much research and speculation for decades. While early AI systems were relatively simple and focused on narrow tasks, modern AI systems are increasingly capable of performing complex tasks and exhibiting human-like intelligence.One area of particular interest in the field of AI is the relationship between consciousness and decentralized networks, blockchains, and smart contracts. Decentralized networks and blockchains, which are distributed systems that enable secure and transparent communication and transactions, have gained significant attention in recent years due to their potential to revolutionize industries such as finance, healthcare, and supply chain management. Smart contracts, which are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code, have also gained traction as a way to automate complex legal and business processes.",
       "author": "Brianna Baxter",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "07/05/2022",
+      "totalHits": 0,
       "email": "briannabaxter@candecor.com",
       "tags": [
-        "cillum",
-        "dolore",
-        "in",
-        "tempor",
-        "consequat",
-        "dolore",
-        "qui"
+       "blockchain","ai","machinelearning"
       ]
     },
     {
-      "_id": "63b675414cda891632f86a7e",
+      
       "index": 4,
       "isActive": true,
       "rating": 4.9,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--xuCBLADk--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t6lbuanz3a7cprg0zn90.png",
+      "title": "Complete Data Science Roadmap/ Bootcamp from noob to expert.",
+      "desc": "Welcome to the Data Science course! Over the next 100 days, you will learn a wide range of topics related to Python programming, data science, and machine learning. These topics will be covered in a variety of posts, so be sure to bookmark this page and follow me here and on GitHub for updates. Throughout the course, you will have the opportunity to work with real-world data sets and apply the concepts you have learned to solve practical problems. You will also find exercises in each post that you can practice to further solidify your understanding of the material. All materials and exercises will be available on the GitHub repository linked below.",
       "author": "Tamra Whitley",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "06/03/2022",
+      "totalHits": 0,
       "email": "tamrawhitley@candecor.com",
       "tags": [
-        "ullamco",
-        "consectetur",
-        "voluptate",
-        "sint",
-        "do",
-        "labore",
-        "aliqua"
+        "datascience"
       ]
     },
     {
-      "_id": "63b675414ea68ea056985261",
+      
       "index": 5,
       "isActive": true,
       "rating": 2.2,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--9PdVet6M--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9cz7w0f0bj9mapet25v9.png",
+      "title": "Why is redux-observable Like That?",
+      "desc": "redux is super weird. Why would we architect an application that way? How did someone even think to write it like that? redux, redux-observable and react itself are the consequences of many concepts that have built on each other and in some cases been discovered in parallel. A couple of them come from backend design. Though each concept is simple, they form a complex web of relations to each other.",
       "author": "Ronda Haney",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "15/01/2022",
+      "totalHits": 0,
       "email": "rondahaney@candecor.com",
       "tags": [
-        "ut",
-        "pariatur",
-        "pariatur",
-        "nisi",
-        "magna",
-        "mollit",
-        "ipsum"
+        "redux"
       ]
     },
     {
-      "_id": "63b67541a0624896de2cfd60",
+      
       "index": 6,
       "isActive": true,
       "rating": 4.7,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--qaw5eHky--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ubrzphlhzrvhwepbvyq4.jpg",
+      "title": "What is Redux Toolkit?",
+      "desc": "One important thing to take away is that Redux provides us with powerful data fetching and caching capability. This removes the need to create functions ourselves that would perform the same logic. Using Redux Toolkit is not required when using Redux, however it is encouraged because it does make your code DRYer and more maintainable, while speeding up development. The package can be used at any skill level, and added at the beginning, in the middle, or at the end. I would encourage starting off your react/redux application with the redux toolkit package if you are planning to use it in the future, just to make things easier.",
       "author": "Michael Patrick",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "10/07/2022",
+      "totalHits": 0,
       "email": "michaelpatrick@candecor.com",
       "tags": [
-        "esse",
-        "quis",
-        "reprehenderit",
-        "aliquip",
-        "exercitation",
-        "aute",
-        "tempor"
+       "software"
       ]
     },
     {
-      "_id": "63b67541048a35e10a7425ac",
+      
       "index": 7,
       "isActive": false,
       "rating": 3.4,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--3A9j3cwn--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/66097bje7tkcp2tpljy8.png",
+      "title": "MiDDLE-WARES REDUX-SAGA & REDUX-THUNK",
       "desc": "",
       "author": "Lorena Rosario",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "10/07/2021",
+      "totalHits": 0,
       "email": "lorenarosario@candecor.com",
       "tags": [
-        "duis",
-        "do",
-        "mollit",
-        "elit",
-        "esse",
-        "irure",
-        "minim"
+      "productivity"
       ]
     },
     {
-      "_id": "63b6754167b0cb7a53a41c21",
+      
       "index": 8,
       "isActive": true,
       "rating": 3.4,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://dev.to/abhinav0334/chatgpt-vs-satya-nadella-over-biryani-the-chatbot-is-learning-from-its-mistakes-21i3",
+      "title": "Database 101: Data Consistency for Beginners",
+      "desc": "In the end of 2022 I decided to make things more clear when the subject is Databases, because this was always a pain, as a Backend Developer, have the pleasure to hate complex database queries. With that in mind I challenged myself to start from scratch and learn about this poorly explored world just for fun.",
       "author": "Jill Watson",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "25/07/2021",
+      "totalHits": 0,
       "email": "jillwatson@candecor.com",
       "tags": [
-        "sint",
-        "minim",
-        "fugiat",
-        "commodo",
-        "irure",
-        "sint",
-        "veniam"
+      "database"
       ]
     },
     {
-      "_id": "63b675416d96c445e13f9a21",
+      
       "index": 9,
       "isActive": false,
       "rating": 2.3,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--z3ngBnbK--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/355dj04tz1fx6quyd1b4.png",
+      "title": "6 ways we improved our documentation in 2022",
+      "desc": "As a technical writer at Medusa, I am heavily involved in the development of our documentation, especially in writing the content. Throughout 2022, our documentation team have put a lot of effort into not only investing more resources into documentation, but look into different ways to improve it.",
       "author": "Fuller Pacheco",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "25/08/2022",
+      "totalHits": 0,
       "email": "fullerpacheco@candecor.com",
       "tags": [
-        "nisi",
-        "et",
-        "esse",
-        "amet",
-        "ad",
-        "voluptate",
-        "cupidatat"
+        "productivity"
+      
       ]
     },
     {
-      "_id": "63b67541cda65aa097d83cf4",
+      
       "index": 10,
       "isActive": false,
       "rating": 3.5,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--L5vOoM6I--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vxa2eu9zvkbnmidh8y0u.png",
+      "title": "What is cURL and why is it important in API testing?🤖",
+      "desc": "Developers use cURL to send and receive data to and from servers. Specifically, any user can specify a server URL (the location to which they want to submit a request) and the data they want to send to that server URL using this command line interface (CLI). cURL supports multiple protocols (schemes), like DICT, FILE, FTP(S), GOPHER(S), IMAP(S), MQTT, RTSP, etc. and of course HTTP.",
       "author": "Vilma Conway",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "14/08/2022",
+      "totalHits": 0,
       "email": "vilmaconway@candecor.com",
       "tags": [
-        "nulla",
-        "do",
-        "est",
-        "exercitation",
-        "dolore",
-        "ea",
-        "consequat"
+       "productivity"
       ]
     },
     {
-      "_id": "63b675419d852adddf558531",
+      
       "index": 11,
       "isActive": true,
       "rating": 2.2,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--ihe73d7X--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ee7tx5lncuffh0mkuv7d.png",
+      "title": "Become a Frontend web developer in 2023 - A step by step guide",
+      "desc": "Don't rush into frontend developer just because it's trending or because your friend tells you that you'll get a higher pay if you become a FE developer instead understand what this profession is all about -->why do companies hire developers?? -->what problems are you expected to solve?? -->what are your responsibilities as a developer??",
       "author": "Holmes Greene",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "18/06/2022",
+      "totalHits": 0,
       "email": "holmesgreene@candecor.com",
       "tags": [
-        "officia",
-        "fugiat",
-        "deserunt",
-        "cillum",
-        "do",
-        "ex",
-        "culpa"
+       "webdev"
       ]
     },
     {
-      "_id": "63b675410647972cc6746bdf",
+      
       "index": 12,
       "isActive": false,
       "rating": 3.5,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--aHIzCMjp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mx3ip6j10h97hbmeq6tj.PNG",
+      "title": "Every Software Developer should write a blog",
+      "desc": "As a software engineer it’s been a couple of years that I’m saying to myself that I’m going to start writing blog posts tomorrow, next week or even next month, but truth is I never did write a single blog post. The reason I didn’t start was, I thought, I’m not an expert of anything, not a famous person, and not good at writing, but a regular software engineer. Therefore, why should I take my time write a post and nobody even read it. That always stoped me starting a blog. But recently, after I read couple of blog posts from programmers and software engineers I changed my mind and decided blogging.",
       "author": "Stone Odom",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "20/06/2022",
+      "totalHits": 0,
       "email": "stoneodom@candecor.com",
       "tags": [
-        "ipsum",
-        "veniam",
-        "ut",
-        "ullamco",
-        "consectetur",
-        "labore",
-        "quis"
+        "datascience"
       ]
     },
     {
-      "_id": "63b67541c292cbd313629b29",
+      
       "index": 13,
       "isActive": false,
       "rating": 1.5,
-      "picture": "http://placehold.it/32x32",
-      "title": "",
-      "desc": "",
+      "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--bZ1GsXzQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/114zgy710p7v19s9h7yf.png",
+      "title": "Understanding Git through images",
+      "desc": "Git is a type of source code management system called a distributed version control system. Git is a tool to facilitate development work by recording and tracking the changelog (version) of files, comparing past and current files, and clarifying changes. The system also allows multiple developers to edit files at once, so the work can be distributed.",
       "author": "Kelsey Bean",
-      "createdAt": "",
-      "totalHits": "",
+      "createdAt": "20/10/2022",
+      "totalHits": 0,
       "email": "kelseybean@candecor.com",
       "tags": [
-        "aute",
-        "consectetur",
-        "voluptate",
-        "sit",
-        "aute",
-        "mollit",
-        "fugiat"
+       "redux"
       ]
     }
   ]

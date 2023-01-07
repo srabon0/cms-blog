@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadBlogs } from '../../redux/actionsCreator/actionCreator';
+
+import fetchBlogs from '../../redux/thunk/fetchBlogs';
+
 import BlogCard from './BlogCard';
 
 const Home = () => {
     const dispatch = useDispatch()
-    useEffect(()=>{
-        // dispatch(fetchBlogs())
-        fetch('blogs.json')
-        .then(res=>res.json())
-        .then(data=>dispatch(loadBlogs(data)))
-    },[dispatch])
+    useEffect(() => {
+        dispatch(fetchBlogs())
+       }, [dispatch]);
     const state =  useSelector((state)=>state)
     const blogs = state.blogs
     console.log("I am state",state)
