@@ -2,16 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const BlogCard = ({blog}) => {
+  const {
+    _id,
+    title,
+    picture,
+    desc,
+    author,
+    rating,
+    tags,
+    totalHits,
+    isActive,
+    createdAt,
+  } = blog;
   return (
     <div class="col">
     <div class="card h-100">
-      <img src={blog?.picture} class="card-img-top" alt="..." />
+      <img src={picture} class="card-img-top" alt="..." />
       <div class="card-body">
-        <h5 class="card-title">{blog?.title}</h5>
-        <p class="card-text">{blog?.desc.slice(0,200) +"..." } <Link to={`/details/${blog._id}`}> <span className="text-primary cursor-pointer" >see more</span> </Link> </p>
+       <div className="mb-2">
+       {
+           tags.map(item=><span className="px-2 bg-dark text-white mx-1 rounded py-1 cursor-pointer">#{item}</span>)
+        }
+        </div> 
+        <h5 class="card-title">{title}</h5>
+        <p className="text-muted">Author : <span className="border rounded  p-1 text-success"> {author} </span></p>
+        <p class="card-text">{desc.slice(0,200) +"..." } <Link to={`/details/${_id}`}> <span className="text-primary cursor-pointer" >see more</span> </Link> </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+      <small class="text-muted mx-2">{createdAt}</small>
+      <small class="text-muted">Views : {totalHits}</small>
       </div>
     </div>
   </div>
