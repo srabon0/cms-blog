@@ -20,9 +20,9 @@ const BlogCard = ({blog}) => {
       <img src={picture} class="card-img-top" alt="..." />
       <div class="card-body">
        <div className="mb-2">
-       {
-           tags.map(item=><span className="px-2 bg-dark text-white mx-1 rounded py-1 cursor-pointer">#{item}</span>)
-        }
+       {/* {
+           tags?.map(item=><span className="px-2 bg-dark text-white mx-1 rounded py-1 cursor-pointer">#{item}</span>)
+        } */}
         </div> 
         <h5 class="card-title">{title}</h5>
         <p className="text-muted">Author : <span className="border rounded  p-1 text-success"> {author} </span></p>

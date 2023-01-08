@@ -5,6 +5,7 @@ import Main from "../components/Layout/Main/Main";
 import Dashboard from "../components/Layout/Dashboard/Dashboard";
 import Bloglist from "../components/Layout/Dashboard/Bloglist";
 import BlogDetails from "../components/BlogDetails/BlogDetails";
+import AddBlog from "../components/Layout/Dashboard/AddBlog";
 
 const routes = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const routes = createBrowserRouter([
         {
           path: "/dashboard",
           element: <Bloglist />,
+        },
+        {
+          path: "/dashboard/addblog",
+          element: <AddBlog />,
         },
         // {
         //   path: "add-product",
