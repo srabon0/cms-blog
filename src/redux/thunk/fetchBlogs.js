@@ -6,7 +6,7 @@ const fetchBlogs = ()=>{
         const {data} = await  axios.get("http://localhost:5000/blogs")
         console.log("data fnhdsajo",data)
         if(data.data.length){
-            dispatch(loadBlogs(data.data))
+            dispatch(loadBlogs(data))
         };
 
     }

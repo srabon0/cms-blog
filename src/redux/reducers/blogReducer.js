@@ -1,7 +1,7 @@
 import { ADD_BLOG, DELETE_BLOG, LOAD_BLOG } from "../actionTypes/actionTypes"
 
 const initilState = {
-    test:"TEST",
+    test:[],
     blogs:[]
 }
 const blogReducer = (state=initilState,action)=>{
@@ -9,7 +9,8 @@ const blogReducer = (state=initilState,action)=>{
         case LOAD_BLOG :
             return {
                 ...state,
-                blogs:action.payload
+                blogs:action.payload.data,
+                tags:action.payload.tags
             }
         case ADD_BLOG:
             return {
