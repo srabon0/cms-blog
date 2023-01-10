@@ -14,6 +14,9 @@ const BlogCard = ({blog}) => {
     isActive,
     createdAt,
   } = blog;
+  const convertedDate = (date)=>{
+    const d = new Date(date);
+    return d.toLocaleDateString('en-GB');}
   return (
     <div class="col">
     <div class="card h-100">
@@ -29,7 +32,7 @@ const BlogCard = ({blog}) => {
         <p class="card-text">{desc.slice(0,200) +"..." } <Link to={`/details/${_id}`}> <span className="text-primary cursor-pointer" >see more</span> </Link> </p>
       </div>
       <div class="card-footer">
-      <small class="text-muted mx-2">{createdAt}</small>
+      <small class="text-muted mx-2">{convertedDate(createdAt)}</small>
       <small class="text-muted">Views : {totalHits}</small>
       </div>
     </div>

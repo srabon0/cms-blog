@@ -5,25 +5,27 @@ import postBlog from "../../../redux/thunk/addBlog";
 
 const AddBlog = () => {
   const dispatch = useDispatch();
-  const state = useSelector((state) => state);
+  const blogs = useSelector((state) => state.blogs);
   const { register, control, handleSubmit } = useForm({
     defaultValues: {
       title: "",
       desc: "",
       picture: null,
       author: "",
-      createdAt: "",
+      index:blogs.length,
       isActive: null,
       tags:[],
       totalHits: 0,
-      createdAt: new Date().toLocaleDateString("de-DE"),
+      createdAt:(()=>{
+        const date = new Date().toISOString();
+        return date
+      })(),
     },
   });
   const { fields, append, remove } = useFieldArray({
     control,
     name: "tags"
   });
-
 
 
   const [file, setFile] = useState(null);
@@ -65,6 +67,7 @@ const AddBlog = () => {
   const onSubmit = async (data) => {
     modifyData(data);
   };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div class="row mb-3">
