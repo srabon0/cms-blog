@@ -12,34 +12,82 @@ const Home = () => {
   }, [dispatch]);
   const state = useSelector((state) => state);
   const blogs = state.blogs;
-  const allTags = state.tags
-  const [sortFactor, setSortFactor] = useState("new");
+  const allTags = state.tags;
+  const [sortFactor, setSortFactor] = useState("");
+  const [cTag, setCTag] = useState("");
   let content;
-  const tags = allTags.map(tag=><button className="text-white bg-dark p-1 rounded m-2">#{tag}</button>)
- 
-  if(sortFactor=='new'){
-    content = blogs.sort((a,b)=> a.createdAt.localeCompare(b.createdAt)).map((blog) => (
-      <BlogCard key={blog.index} blog={blog}></BlogCard>
-    ));;
-  }else if(sortFactor=='old'){
-    content = blogs.sort((a,b)=> -a.createdAt.localeCompare(b.createdAt)).map((blog) => (
-      <BlogCard key={blog.index} blog={blog}></BlogCard>
-    ))
+  const clearFilter = () => {
+    setCTag("");
+    setSortFactor("");
+    console.log("done filter clear");
+  };
+  const tags = allTags?.map((tag) => (
+    <button
+      onClick={() => {
+        setCTag(tag);
+      }}
+      className="text-white bg-dark rounded mx-1 mb-1"
+    >
+      #{tag}
+    </button>
+  ));
 
+  if (sortFactor == "old" || (sortFactor=='old' && cTag)) {
+    content = blogs
+      ?.filter((v) => {
+        if (cTag) {
+          return v.tags.includes(cTag);
+        }
+        return v
+      })
+      ?.sort((a, b) => a.createdAt.localeCompare(b.createdAt))
+      ?.map((blog) => <BlogCard key={blog.index} blog={blog}></BlogCard>);
   }
+  if (sortFactor == "new" || (sortFactor=='new' && cTag)) {
+    content = blogs
+      ?.filter((v) => {
+        if (cTag) {
+          return v.tags.includes(cTag);
+        }
+        return v
+      })
+      ?.sort((a, b) => -a.createdAt.localeCompare(b.createdAt))
+      ?.map((blog) => <BlogCard key={blog.index} blog={blog}></BlogCard>);
+  }
+  if (!sortFactor)
+    content = blogs
+      ?.filter((v) => {
+        if (v.tags.includes(cTag)) {
+          return v.tags.includes(cTag);
+        }
+      })
+      ?.map((blog) => <BlogCard key={blog.index} blog={blog}></BlogCard>);
+  if (!sortFactor && !cTag)
+    content = blogs?.map((blog) => (
+      <BlogCard key={blog.index} blog={blog}></BlogCard>
+    ));
   console.log(sortFactor);
   return (
-    <div className="container my-1">
+    <div className="container-fluid my-1">
       <div class="row">
-        <div className="col-10">
-        {tags}
-        </div>
+        <div className="col-9">{tags}</div>
         <div class="col-2">
-          <select onChange={(e)=>setSortFactor(e.target.value)} id="inputState" class="form-select">
-            <option selected disabled>sort by</option>
-            <option value='new'>Newer</option>
-            <option value='old'>Older</option>
+          <select
+            onChange={(e) => setSortFactor(e.target.value)}
+            id="inputState"
+            class="form-select"
+          >
+            <option selected disabled value="">
+              sort by
+            </option>
+            <option value="new">Newer</option>
+            <option value="old">Older</option>
           </select>
+        </div>
+        <div className="col-1">
+          <button onClick={() => clearFilter()} className="btn btn-light">
+            Clear{" "}
+          </button>
         </div>
       </div>
       <br />

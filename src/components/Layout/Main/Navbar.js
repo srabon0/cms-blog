@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary ">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            Navbar
+          <Link className="navbar-brand text-bold" to="/">
+            Dev.so
           </Link>
           <button
             className="navbar-toggler"
