@@ -1,12 +1,32 @@
-import { ADD_BLOG, ADD_TO_HISTORY, DELETE_BLOG, LOAD_BLOG } from "../actionTypes/actionTypes"
+import { ADD_BLOG, ADD_TO_HISTORY, DELETE_BLOG, LOAD_BLOG, SEARCH_BLOG } from "../actionTypes/actionTypes"
 
 const initilState = {
     test:[],
     blogs:[],
     history:[],
+    searchword:"",
+    searchedBlogs:[],
 }
 const blogReducer = (state=initilState,action)=>{
     switch(action.type){
+        case SEARCH_BLOG:
+            console.log("searching",action.payload)
+            return {
+                ...state,
+                searchword:action.payload,
+                searchedBlogs:state.blogs.filter(item=>{
+                    if(action.payload){
+                        return item.title.toLowerCase().includes(action.payload)
+
+                    }else if(action.payload){
+                        return item.tags.map(tag=>tag.toLowerCase().includes(action.payload))
+                    }else if(!action.payload){
+                    return item
+                    }
+                })
+                
+                
+            }
         case LOAD_BLOG :
             return {
                 ...state,
@@ -41,6 +61,7 @@ const blogReducer = (state=initilState,action)=>{
                     }
                 }
             }
+            break
         default:
             return state
     }

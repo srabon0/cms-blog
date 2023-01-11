@@ -13,6 +13,9 @@ const Home = () => {
   const state = useSelector((state) => state);
   const blogs = state.blogs;
   const allTags = state.tags;
+  const searchkey = state.searchword;
+  const searchedBlogs = state.searchedBlogs
+  
   const [sortFactor, setSortFactor] = useState("");
   const [cTag, setCTag] = useState("");
   let content;
@@ -31,7 +34,12 @@ const Home = () => {
       #{tag}
     </button>
   ));
-
+  if(searchkey && searchedBlogs.length){
+    content = searchedBlogs?.map((blog) => (
+      <BlogCard key={blog.index} blog={blog}></BlogCard>
+    ));
+  }else{
+    
   if (sortFactor == "old" || (sortFactor=='old' && cTag)) {
     content = blogs
       ?.filter((v) => {
@@ -66,6 +74,7 @@ const Home = () => {
     content = blogs?.map((blog) => (
       <BlogCard key={blog.index} blog={blog}></BlogCard>
     ));
+  }
   console.log(sortFactor);
   return (
     <div className="container-fluid my-1">

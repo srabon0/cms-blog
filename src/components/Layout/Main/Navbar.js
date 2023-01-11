@@ -1,7 +1,11 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { searchBlog } from "../../../redux/actionsCreator/actionCreator";
 
 const Navbar = () => {
+  const dispatch = useDispatch()
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary ">
@@ -47,10 +51,9 @@ const Navbar = () => {
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                onKeyUp={(e)=>dispatch(searchBlog(e.target.value))}
               />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
+              
             </form>
           </div>
         </div>

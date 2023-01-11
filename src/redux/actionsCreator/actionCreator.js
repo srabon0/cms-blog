@@ -1,4 +1,4 @@
-import { ADD_BLOG, ADD_TO_HISTORY, DELETE_BLOG, LOAD_BLOG } from "../actionTypes/actionTypes"
+import { ADD_BLOG, ADD_TO_HISTORY, DELETE_BLOG, LOAD_BLOG, SEARCH_BLOG } from "../actionTypes/actionTypes"
 
 export const loadBlogs = (blogData)=>{
     console.log(blogData)
@@ -24,9 +24,16 @@ export const deleteBlog = (blogId)=>{
 }
 
 export const addToHistory = (blogdata)=>{
-    console.log("add to history", blogdata)
+    
     return {
         type:ADD_TO_HISTORY,
         payload:blogdata
+    }
+}
+export const searchBlog = (keyword)=>{
+    
+    return {
+        type:SEARCH_BLOG,
+        payload:keyword.toLowerCase()
     }
 }
