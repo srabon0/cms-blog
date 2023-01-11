@@ -1,10 +1,17 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
+import { addToHistory } from "../../redux/actionsCreator/actionCreator";
 
 const BlogDetails = () => {
+  const double = (data)=>{
+      setBlog(data)
+      dispatch(addToHistory(data))
+  }
   const { id } = useParams();
   const [blog, setBlog] = useState({});
+  const dispatch = useDispatch()
   const {
     _id,
     title,
@@ -21,8 +28,10 @@ const BlogDetails = () => {
     const getData = async (id) => {
       const url = `http://localhost:5000/blog/${id}`;
       const { data } = await axios.get(url);
-        await setBlog(data);
-      console.log(data);
+      if(data._id){
+        return double(data);
+      }
+     
     };
     getData(id);
   }, [id]);

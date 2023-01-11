@@ -1,8 +1,9 @@
-import { ADD_BLOG, DELETE_BLOG, LOAD_BLOG } from "../actionTypes/actionTypes"
+import { ADD_BLOG, ADD_TO_HISTORY, DELETE_BLOG, LOAD_BLOG } from "../actionTypes/actionTypes"
 
 const initilState = {
     test:[],
-    blogs:[]
+    blogs:[],
+    history:[],
 }
 const blogReducer = (state=initilState,action)=>{
     switch(action.type){
@@ -21,6 +22,24 @@ const blogReducer = (state=initilState,action)=>{
             return {
                 ...state,
                 blogs:state.blogs.filter(item=>item._id!=action.payload)
+            }
+        case ADD_TO_HISTORY:
+            console.log("red",action.payload);
+            if(!state.history.length){
+                return {
+                    ...state,
+                    history:[action.payload]
+                }
+            }else if(state.history.length){
+                const exist = state.history?.find(item=>item?._id==action.payload._id);
+                if(exist){
+                    return state
+                }else{
+                    return{
+                        ...state,
+                        history:[...state.history,action.payload].reverse()
+                    }
+                }
             }
         default:
             return state

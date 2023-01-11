@@ -7,6 +7,7 @@ import Bloglist from "../components/Layout/Dashboard/Bloglist";
 import BlogDetails from "../components/BlogDetails/BlogDetails";
 import AddBlog from "../components/Layout/Dashboard/AddBlog";
 import TestBlog from "../components/Layout/Dashboard/TestBlog";
+import History from "../components/History/History";
 
 const routes = createBrowserRouter([
     {
@@ -22,8 +23,12 @@ const routes = createBrowserRouter([
           element: <BlogDetails />,
         },
         {
-          path: "about",
+          path: "/about",
           element: <About />,
+        },
+        {
+          path: "/history",
+          element: <History />,
         },
         
       ],
