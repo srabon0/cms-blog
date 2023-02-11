@@ -4,7 +4,7 @@ import BlogCard from '../Home/BlogCard';
 
 const History = () => {
     const state = useSelector((state) => state);
-    const readBlog =state.history
+    const readBlog =state.blogs.history
     let content;
     if(readBlog.length){
         content = readBlog?.map(blog=> <BlogCard key={blog.index} blog={blog}></BlogCard>);

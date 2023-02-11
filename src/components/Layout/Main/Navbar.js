@@ -1,11 +1,23 @@
+import axios from "axios";
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { searchBlog } from "../../../redux/actionsCreator/actionCreator";
+import { logOut, searchBlog } from "../../../redux/actionsCreator/actionCreator";
 
 const Navbar = () => {
   const dispatch = useDispatch()
+  const state = useSelector((state)=>state)
+  const cuser =  state.users.currentUser
+  console.log("user is",cuser)
 
+  const logout = async()=>{
+    const res = await axios.get("http://localhost:5000/die");
+    console.log(res);
+    if(res){
+      dispatch(logOut());
+      // window.location.replace(data.url);
+    }
+  }
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary ">
@@ -41,9 +53,21 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">Dashboard</Link>
+             {
+              cuser.role==='admin' &&  <li className="nav-item">
+              <Link className="nav-link" to="/dashboard">Dashboard</Link>
+            </li>
+             }
+              {
+               cuser ?  <li> <p>{cuser?.email}</p> </li> : <>
+                <li className="nav-item">
+                <Link className="nav-link" to="/register">Register</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/login">Login</Link>
+              </li> 
+                </>
+              }
             </ul>
             <form className="d-flex" role="search">
               <input
@@ -54,6 +78,9 @@ const Navbar = () => {
                 onKeyUp={(e)=>dispatch(searchBlog(e.target.value))}
               />
               
+              {
+                cuser && <button onClick={()=>logout()}  className="btn btn-primary" > Logout </button>
+              }
             </form>
           </div>
         </div>

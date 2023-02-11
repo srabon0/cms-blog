@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     dispatch(fetchBlogs());
   }, [dispatch]);
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.blogs);
   const blogs = state.blogs;
   const allTags = state.tags;
   const searchkey = state.searchword;

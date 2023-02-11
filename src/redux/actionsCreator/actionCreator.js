@@ -1,4 +1,4 @@
-import { ADD_BLOG, ADD_TO_HISTORY, DELETE_BLOG, LOAD_BLOG, SEARCH_BLOG } from "../actionTypes/actionTypes"
+import { ADD_BLOG, ADD_TO_HISTORY, DELETE_BLOG, LOAD_BLOG, LOGIN_USER, LOGOUT_USER, SEARCH_BLOG } from "../actionTypes/actionTypes"
 
 export const loadBlogs = (blogData)=>{
     console.log(blogData)
@@ -36,4 +36,15 @@ export const searchBlog = (keyword)=>{
         type:SEARCH_BLOG,
         payload:keyword.toLowerCase()
     }
+}
+
+export const setCurrentUser = (userdata)=>{
+    return {
+        type:LOGIN_USER,
+        payload:userdata
+    }
+}
+
+export const logOut  = ()=>{
+    return { type:LOGOUT_USER }
 }
