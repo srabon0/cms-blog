@@ -3,7 +3,7 @@ import { addBlog } from "../actionsCreator/actionCreator"
 
 const postBlog = (blogData)=>{
     return async(dispatch)=>{
-        const {data} = await  axios.post("http://localhost:5000/blog",blogData);
+        const {data} = await  axios.post("https://cms-blog-srabon.onrender.com/blog",blogData);
         console.log("got post",data)
         if(data.acknowledged==true){
             const newBlog = {

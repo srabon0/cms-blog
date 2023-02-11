@@ -13,7 +13,7 @@ const Register = () => {
         }
         console.log("email",userEmail);
         console.log("password",password);
-        const url  = `http://localhost:5000/register`
+        const url  = `https://cms-blog-srabon.onrender.com/register`
         const userData = {
             username:userEmail,
             password:password

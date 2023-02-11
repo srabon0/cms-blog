@@ -26,7 +26,7 @@ const BlogDetails = () => {
   } = blog;
   useEffect(() => {
     const getData = async (id) => {
-      const url = `http://localhost:5000/blog/${id}`;
+      const url = `https://cms-blog-srabon.onrender.com/blog/${id}`;
       const { data } = await axios.get(url);
       if(data._id){
         return double(data);

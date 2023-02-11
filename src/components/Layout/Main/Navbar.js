@@ -11,7 +11,7 @@ const Navbar = () => {
   console.log("user is",cuser)
 
   const logout = async()=>{
-    const res = await axios.get("http://localhost:5000/die");
+    const res = await axios.get("https://cms-blog-srabon.onrender.com/die");
     console.log(res);
     if(res){
       dispatch(logOut());
